@@ -1,5 +1,0 @@
-@CHARSET "UTF-8";
-
-#todoInsert ul { /*リスト要素ulを初期化*/
-    list-style: none;
-}
