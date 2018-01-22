@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<title>Small HTML 5</title>
+<meta http-equiv="content-language" content="ja">
+<meta charset="UTF-8">
+<script type="text/javascript" src="dwr/engine.js"></script>
+<script type="text/javascript" src="dwr/util.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.serialize.js"></script>
+<script type="text/javascript" src="dwr/interface/carCreator.js"></script>
+<script type="text/javascript" src="dwr/interface/todoCreator.js"></script>
+<script type="text/javascript" src="dwr/interface/todoListener.js"></script>
+<script type="text/javascript" src="js/todoListener.js"></script>
+<script type="text/javascript" src="js/garage.js"></script>
+<body>
+	<form name="todoTitle">
+		<input type="text" name="title"><input type="button"
+			value="garage in" onclick="garage()">
+	</form>
+	<ul id="menu">
+		<li>todo
+			<ul class="sub" id="todo">
+			</ul>
+		</li>
+		<li>doing
+			<ul class="sub" id="doing">
+			</ul>
+		</li>
+		<li>done
+			<ul class="sub" id="done">
+			</ul>
+		</li>
+	</ul>
+</body>

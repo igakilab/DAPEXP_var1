@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<title>project</title>
+<meta http-equiv="content-language" content="ja">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="CSS/project/project.css" media="all">
+<script type="text/javascript" src="dwr/engine.js"></script>
+<script type="text/javascript" src="dwr/util.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.serialize.js"></script>
+<script type="text/javascript" src="dwr/interface/projectCreator.js"></script>
+<script type="text/javascript" src="dwr/interface/projectListener.js"></script>
+<script type="text/javascript" src="js/project/projectCreator.js"></script>
+<script type="text/javascript" src="js/project/projectListener.js"></script>
+
+<body>
+	<form id="projectSelect">
+		<H1>プロジェクト選択</H1>
+		<ul>
+			<li id="projectName"><label for="ProjectName">Name:</label><select
+				id="selectProjectName"></select></li>
+			<li id="projectOwner"><label id="ownerLabel"></label></li>
+			<li id="projectOverview"><label id="overviewLabel">概要:</label></li>
+			<li><input type="button" value="選択" onclick="projectJump()"></li>
+		</ul>
+	</form>
+	<form id="projectCreate">
+		<H1>新規プロジェクト登録</H1>
+		<ul>
+			<li id="insertProjectName"><label for="ProjectName">Name:</label><input
+				type="text" id="insertName" /></li>
+			<li><label for="selectOwner">Owner:</label><select
+				id="selectOwner"></select></li>
+			<li><label for="insertOverview">概要:</label> <textarea
+					id="insertOverview"></textarea> <input type="button" value="登録"
+				onclick="projectCreate()"></li>
+		</ul>
+	</form>
+
+	<H1>プロジェクト一覧</H1>
+	<ul id ="projectList">
+	</ul>
+</body>
